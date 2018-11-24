@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Barlow:500'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container-fluid" id="content">
+ 
+  <div class = "row text-center">
+    <img width = 100px src="https://pbs.twimg.com/profile_images/698660793265446912/cAMrktol.png">
+    
+    <form id="wikiForm">
+      <label class= "control-label" for="inputName">Wikipedia Viewer</label>
+      <div class="input-group">
+      <input class="form-control" type="text"
+            id="searchInput" placeholder="Search" aria-describedby="Search">
+       <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="searchButton">Go Now!</button>
+      </span>
+      </div             
+        <div> <a href="https://en.wikipedia.org/wiki/Special:Random" target=_blank>
+          Random Article <span class="glyphicon glyphicon-random" aria-hidden="true">             </a>
+          </div>      
+    </form> 
+  </div>
+    <div class="card" id="searchResults"></div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
